@@ -1,6 +1,6 @@
-# 🎯 Gaussian Naive Bayes Classifier — DATA 2060 Project  
+# Gaussian Naive Bayes Classifier — DATA 2060 Project  
 
-## 📚 Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Environment-Setup](#environment-setup)
 - [Repository-Structure](#repository-structure)
@@ -12,7 +12,7 @@
 
 ---
 
-## 🔍 Overview
+## Overview
 
 This repository implements a **Gaussian Naive Bayes (GNB)** classifier **from scratch** and compares it against **scikit-learn’s GaussianNB** on the Kaggle Diabetes dataset.
 
@@ -27,7 +27,7 @@ The project includes:
 - 
 ---
 
-## ⚙️ Environment Setup
+## Environment Setup
 
 ### Conda Environment (`environment.yaml`)
 
@@ -48,20 +48,18 @@ dependencies:
 prefix: /opt/conda
 ```
 
-## 🧠 Model Description
+## Model Description
 
 ### Gaussian Naive Bayes — Training
 
-For each class \(k\):
+For each class k:
 
 **Prior probability**
-$$P(y=k) = \frac{n_k}{N}$$
+$P(y=k) = \frac{n_k}{N}$
 
 **Feature mean and variance**
-\[
-\mu_{k,j} = \text{mean}(x_j \mid y=k), \quad
-\sigma_{k,j}^2 = \text{var}(x_j \mid y=k)
-\]
+$$\mu_{k,j} = \text{mean}(x_j \mid y=k), \quad
+\sigma_{k,j}^2 = \text{var}(x_j \mid y=k)$$
 
 ---
 
@@ -69,16 +67,25 @@ $$P(y=k) = \frac{n_k}{N}$$
 
 For a sample \(x\), compute the joint log-likelihood:
 
-\[
-\log P(y=k \mid x) =
+$$\log P(y=k \mid x) =
 \log P(y=k)
 -\frac12 \sum_j \left[
 \log(2\pi\sigma^2_{k,j}) +
 \frac{(x_j - \mu_{k,j})^2}{\sigma^2_{k,j}}
-\right]
-\]
+\right]$$
 
 Predict the class with the **maximum posterior probability**.
 
+## Results
+
+Evaluation on the Diabetes dataset yields:
+
+| Model            | Accuracy | Precision | Recall  | F1 Score |
+|------------------|----------|-----------|---------|----------|
+| **Sklearn GNB**  | 0.7727   | 0.6429    | 0.5745  | 0.6067   |
+| **Custom GNB**   | 0.7727   | 0.6429    | 0.5745  | 0.6067   |
+
+✔️ Custom implementation **matches sklearn exactly**  
+✔️ Confusion matrices available in the notebook  
 
 
