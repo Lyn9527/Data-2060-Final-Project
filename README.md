@@ -3,13 +3,9 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Environment-Setup](#environment-setup)
-- [Repository-Structure](#repository-structure)
 - [Model-Description](#model-description)
 - [Results](#results)
-- [Testing](#testing)
 - [Authors](#authors)
-- [Citation](#citation)
-
 ---
 
 ## Overview
@@ -87,5 +83,15 @@ Evaluation on the Diabetes dataset yields:
 
 ✔️ Custom implementation **matches sklearn exactly**  
 ✔️ Confusion matrices available in the notebook  
+
+## Authors
+
+| Name | Role | Contact |
+|------|------|---------|
+| **Lin Zhou** | Testing | lin_zhou@brown.edu |
+| **Linzhuo Zhang** | Implementation| linzhuo_zhang@brown.edu |
+| **Zhiwei He** | Model | zhiwei_he@brown.edu |
+| **Xiaoqing Yao** | Implementation | xiaoqing_yao@brown.edu |
+
 
 
