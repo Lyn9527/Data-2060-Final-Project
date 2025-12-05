@@ -86,12 +86,12 @@ Evaluation on the Diabetes dataset yields:
 
 ## Authors
 
-| Name | Role | Contact |
-|------|------|---------|
-| **Lin Zhou** | Testing | lin_zhou@brown.edu |
-| **Linzhuo Zhang** | Implementation| linzhuo_zhang@brown.edu |
-| **Zhiwei He** | Model | zhiwei_he@brown.edu |
-| **Xiaoqing Yao** | Implementation | xiaoqing_yao@brown.edu |
+| Name | Contact |
+|------|---------|
+| **Lin Zhou** | lin_zhou@brown.edu |
+| **Linzhuo Zhang** | linzhuo_zhang@brown.edu |
+| **Zhiwei He** | zhiwei_he@brown.edu |
+| **Xiaoqing Yao** | xiaoqing_yao@brown.edu |
 
 
 
