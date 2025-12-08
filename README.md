@@ -5,6 +5,7 @@
 - [Environment-Setup](#environment-setup)
 - [Model-Description](#model-description)
 - [Results](#results)
+- [Model Performance Comparison](#model-performance-comparison)
 - [Authors](#authors)
 ---
 
@@ -82,8 +83,27 @@ Evaluation on the Diabetes dataset yields:
 | **Sklearn GNB**  | 0.7727   | 0.6429    | 0.5745  | 0.6067   |
 | **Custom GNB**   | 0.7727   | 0.6429    | 0.5745  | 0.6067   |
 
-✔️ Custom implementation **matches sklearn exactly**  
-✔️ Confusion matrices available in the notebook  
+Custom implementation **matches sklearn exactly**  
+Confusion matrices available in the notebook  
+
+
+## Model Performance Comparison
+
+To benchmark our custom Gaussian Naive Bayes implementation, we compared its performance against several classical machine-learning models on the Diabetes dataset.
+
+| Model            | Accuracy | Precision | Recall  | F1 Score |
+|------------------|----------|-----------|---------|----------|
+| **Sklearn GNB**  | 0.7727   | 0.6429    | 0.5745  | 0.6067   |
+| **Custom GNB**   | 0.7727   | 0.6429    | 0.5745  | 0.6067   |
+| **Logistic Regression**   | 0.8052   | 0.7179    | 0.5957  | 0.6512   |
+| **Decision Tree**   | 0.7013   | 0.5091    | 0.5957  | 0.5490   |
+
+Key Observations
+1. Our Custom GNB matches sklearn’s GNB exactly, confirming correctness.
+2. Logistic Regression achieves the best overall performance, especially in accuracy and F1.
+3. Decision Tree overfits slightly (higher recall but low precision), resulting in the weakest F1 score.
+4. GNB remains a strong, simple baseline with competitive performance given its assumptions.
+
 
 ## Authors
 
