@@ -21,7 +21,6 @@ The project includes:
 - Performance comparison with sklearn  
 - Reproducible Conda environment  
 - Visualizations and metrics in notebook
-- 
 ---
 
 ## Environment Setup
