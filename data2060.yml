@@ -11,5 +11,6 @@ dependencies:
 - jupyter
 - pytest = 8.4.1
 - quadprog
+- seaborn = 0.13.2
 
 prefix: /opt/conda
